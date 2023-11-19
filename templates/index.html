@@ -23,179 +23,28 @@
   <title>Sistem Portal Otomatis</title>
 </head>
 
-<body class="container">
-  <div class="d-flex align-items-center justify-content-between">
-    <div class="col-2">
-      <a href="/history" type="button" class="btn btn-secondary p-3 fs-1">History</a>
-    </div>
-    <div class="col-6 d-flex justify-content-between">
-      <img src="{{url_for('static', filename='gambar.jpg')}}" height="200" width="300" alt="foto">
-      <img src="{{url_for('static', filename='gambar.jpg')}}" height="200" width="300" alt="foto">
-    </div>
-  </div>
-
-  <div class="py-3">
-    <div class="d-flex justify-content-between">
+<body>
+  <div class="container">
+    <div class="row gx-5">
       <div class="col">
-        <video id="video" autoplay></video>
+       <video id="video1" autoplay></video>
       </div>
-      <div class="col table-container">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">No.</th>
-              <th scope="col">Nama</th>
-              <th scope="col">NIM</th>
-              <th scope="col">Waktu Masuk</th>
-              <th scope="col">Waktu Keluar</th>
-              <th scope="col">Plat Kendaraan</th>
-              <th scope="col">Gambar</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">7</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">8</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">9</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">10</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">11</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">12</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">13</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">14</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">15</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col">
+        <video id="video2" autoplay></video>
       </div>
     </div>
-  </div>
 
-  <div class="text-center">
-    <div class="row">
+    <div class="row text-center">
+      <div class="col">
+      </div>
+      <div class="col">
+        <a href="/history" type="button" class="btn btn-secondary p-3 fs-1">History</a>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+
+    <div class="row text-center">
       <div class="col">
         <img src="{{url_for('static', filename='gambar.jpg')}}" height="200" width="300" alt="foto">
       </div>
