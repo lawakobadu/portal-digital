@@ -1,7 +1,7 @@
 import cv2
 import easyocr
 
-model = "model/haarcascade_russian_plate_number.xml"
+model = "haarcascade_russian_plate_number.xml"
 min_area = 500
 cap = cv2.VideoCapture(0)
 count = 0

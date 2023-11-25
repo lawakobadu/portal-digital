@@ -25,12 +25,12 @@
 
 <body>
   <div class="container">
-    <div class="row gx-5">
+    <div class="d-flex gx-5">
       <div class="col">
-       <video id="video1" autoplay></video>
+        <img src="{{ url_for('video_feed1') }}">
       </div>
       <div class="col">
-        <video id="video2" autoplay></video>
+        <img src="{{ url_for('video_feed2') }}">
       </div>
     </div>
 
