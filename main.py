@@ -120,7 +120,7 @@ def generate_frames1():
         success, frame = camera.read()
         if not success:
             break
-        face_detect(frame)
+        anpr(frame)
 
         _, buffer = cv2.imencode('.jpg', frame)
         frame_bytes = buffer.tobytes()
@@ -136,7 +136,7 @@ def generate_frames2():
         success, frame = camera.read()
         if not success:
             break
-        anpr(frame)
+        face_detect(frame)
 
         _, buffer = cv2.imencode('.jpg', frame)
         frame_bytes = buffer.tobytes()
